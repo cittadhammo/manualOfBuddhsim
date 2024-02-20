@@ -1,0 +1,65 @@
+﻿body {
+	background-image: url('../images/whitwav.jpg');
+	font-family: Tahoma, Geneva, sans-serif;
+	text-decoration: none;
+	font-size: 1.2em;
+}
+p
+{
+	color: black;
+	margin: 0 0 8px 20px;
+	padding: 0;
+	line-height: 1.20;
+}
+
+h1
+{
+	font-size:  x-large  ;
+	color: black;
+}
+h2
+{
+	font-size:  large ;
+	color: navy;
+}
+h3
+{
+	font-size: 1.0em;
+	color: black;
+}
+h4
+{
+	font-size:  medium ;
+	color: black;
+}
+dd
+{
+	color: black;
+}
+dt
+{
+	color: black;
+}
+td
+{
+	color: black;
+	alignment-adjust:central;
+}
+dir {
+	color: black ;
+}
+.bold {
+	font-weight: bold;
+}
+.italic {
+	font-style: italic;
+}
+
+ul, ol li {
+	margin-left: 35px;
+}
+
+a, a:visited 
+{
+	/* [disabled]text-decoration: none; */
+}

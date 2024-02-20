@@ -1,0 +1,15 @@
+User-agent: *
+Disallow: /diverses/pali-wtb/
+
+User-Agent: Scooter
+Disallow: /diverses/pali-wtb/
+
+User-Agent: Googlebot-Image
+Disallow: /diverses/pali-wtb/
+
+User-Agent: Googlebot
+Disallow: /diverses/pali-wtb/
+
+User-Agent: T-Rex
+Disallow: /diverses/pali-wtb/
+

@@ -1,0 +1,62 @@
+﻿body {
+	font-family: Tahoma, Geneva, sans-serif;
+}
+h1 {
+	font-size: x-large ;
+	color: black;
+}
+
+h2
+{
+	font-size: large;
+	color: navy;
+}
+
+h3
+{
+	font-size: medium;
+	color: black;
+}
+
+h4
+{
+	font-size: medium;
+	color: black;
+}
+p
+{
+	font-size: medium;
+	color: black;
+	margin : 10 10px; 
+	padding : .2em 10; 
+
+}
+li
+{
+	font-size: medium;
+	color: black;
+	margin : 0px 30px; 
+	padding : .2em 0; 
+}
+dd
+{
+	font-size: medium;
+	color: black;
+}
+dt
+{
+	font-size: medium;
+	color: black;
+}
+td
+{
+	font-size: medium;
+	color: black;
+	height = "1";
+	border: 1px solid #000000;
+}
+table
+{
+	border: 1px solid #003366;
+	margin: 20px;
+}	
