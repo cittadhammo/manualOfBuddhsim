@@ -1,1 +1,1 @@
-This is a test
+Observable Framework for a Project about illustrating the Manual of BUddhist Terms

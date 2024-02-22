@@ -33,6 +33,31 @@ const allFiles = getFiles(dirPath);
 function extractInfoFromFile(filePath) {
     const html = fs.readFileSync(filePath, 'utf-8');
     const $ = cheerio.load(html);
+
+    // Find the last <hr> tag within the <body>
+    const firstHr = $('body hr').first();
+
+    // Select all elements after the first <hr> until the end of the body
+    const contentAfterFirstHr = firstHr.nextUntil('body').toArray();
+    // Find the first <p align="center"> element within the <body>
+    const firstCenteredParagraph = $('body p[align="center"]').first();
+
+    // Convert the selected elements to HTML and log them to the console
+    const htmlContent = $.html(firstCenteredParagraph);
+
+    // Define the file path and the data to append
+    const filePath2 = 'message.txt';
+    
+    // Append data to the file
+    fs.appendFile(filePath2, htmlContent, 'utf8', (err) => {
+      if (err) throw err;
+      console.log('The data was appended to the file!');
+    });
+    
+
+    // Remove all elements after the last <hr>
+    firstCenteredParagraph.nextAll().remove();
+
     const title = $('title').text();
     const bodyContent = $('body').text();
     const title2 = $('h2').text();
@@ -61,7 +86,7 @@ function processFiles(filePaths) {
     });
 
     // Write the results to a JSON file
-    const location = 'data3.json'
+    const location = 'data2-1.json'
     const location1 = './docs/data/data.json'
     fs.writeFileSync(location, JSON.stringify(results, null,  2), 'utf-8');
     console.log('Data successfully saved to '+location);
