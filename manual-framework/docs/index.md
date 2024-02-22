@@ -4,10 +4,10 @@ toc: false
 
 # The Illustrated Manual of Buddhist Terms and Doctrines
 
-The goal of this project is to explore the graph created by mapping the link of the book: A Manual of Buddhist Terms and Doctrines
+The goal of this project is to explore the graph created by mapping the links and references of the book: A Manual of Buddhist Terms and Doctrines
 
 <img src="./assets/cover.JPG" height=400>
-<a href='/force-graph'><img src="./assets/force.JPG" height=400></a>
+<a href='./force-graph'><img src="./assets/force.JPG" height=400></a>
 
 Buddhist Dictionary:
 A Manual of Buddhist Terms and Doctrines
