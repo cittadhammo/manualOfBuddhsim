@@ -14,10 +14,7 @@ With httrack or wget we get a local copy of the website. You will need a local h
 Using phind.com we get a script to recusively extract Nodes and Links from each pages.
 
 
-> How to display js code without running it ? 
-
-
-```js echo
+```js echo run=false
 import path from 'path';
 import cheerio from 'cheerio';
 import fs from 'fs';
