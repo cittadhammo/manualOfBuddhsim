@@ -46,7 +46,7 @@ function extractInfoFromFile(filePath) {
     const htmlContent = $.html(firstCenteredParagraph);
 
     // Define the file path and the data to append
-    const filePath2 = 'message.txt';
+    const filePath2 = 'message4.txt';
     
     // Append data to the file
     fs.appendFile(filePath2, htmlContent, 'utf8', (err) => {
@@ -56,7 +56,7 @@ function extractInfoFromFile(filePath) {
     
 
     // Remove all elements after the last <hr>
-    firstCenteredParagraph.nextAll().remove();
+    firstHr.nextAll().remove();
 
     const title = $('title').text();
     const bodyContent = $('body').text();
@@ -86,7 +86,7 @@ function processFiles(filePaths) {
     });
 
     // Write the results to a JSON file
-    const location = 'data2-1.json'
+    const location = 'data2-4.json'
     const location1 = './docs/data/data.json'
     fs.writeFileSync(location, JSON.stringify(results, null,  2), 'utf-8');
     console.log('Data successfully saved to '+location);
